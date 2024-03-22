@@ -12,4 +12,26 @@ Additionally, the module is made to be compatible with multiple platforms, guara
 
 ## Documentation
 
+***Example for non-held inputs***
+```lua
+local input_class = ([ENTER DIRECTORY PATH FOR INPUT CLASS])
+local print_input = input_class:GetButtonEvent("printer_input")
 
+print_input.Event:Connect(function(isPressed)
+    if isPressed then
+        print("I am being pressed!")
+    end
+end)
+```
+
+***Example for held inputs***
+```lua
+local input_class = ([ENTER DIRECTORY PATH FOR INPUT CLASS])
+local print_input2 = input_class:GetButtonEvent("printer_input2")
+print_input2.Event:Connect(function(isPressed)
+    if isPressed then
+        print("I am currently held down!")
+    else
+        print("I have been released!")
+end)
+```
