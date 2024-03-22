@@ -1,48 +1,6 @@
 --[[
-
 Author(s): Krish "worhas" Purgaus
 Purpose: Handles inputs 
-
-DOCUMENTATION:
------------------------------------------------------------------------------------------------
-// INPUT
-This class is a time-efficient and shorthand way of handling inputs, without having to
-directly reference the "UserInputService" and so on. The class handles inputs by storing them
-in tables and is cross-compatible with console. In addition, the class can also handle held
-inputs for you, instead of having to deal with ROBLOX's lackluster support for held inputs.
-
-Given that you've assigned the input within the tables, and their boolean HoldInput, you can
-refer to the bindable event to begin using your input.
-
-This class will be getting updated, there are no estimated update times that are set in stone,
-so be patient.
------------------------------------------------------------------------------------------------
-// PLANNED UPDATES
-- Mobile support
-- A better form of shorthanding the input
------------------------------------------------------------------------------------------------
-// USAGE (This example will demonstrate inputs printing text.)
-
--- Example for non-held input
-local input_class = ([ENTER DIRECTORY PATH FOR INPUT CLASS])
-local print_input = input_class:GetButtonEvent("printer_input")
-
-print_input.Event:Connect(function(isPressed)
-    if isPressed then
-        print("I am being pressed!")
-    end
-end)
-
--- Example for held input
-local input_class = ([ENTER DIRECTORY PATH FOR INPUT CLASS])
-local print_input2 = input_class:GetButtonEvent("printer_input2")
-print_input2.Event:Connect(function(isPressed)
-    if isPressed then
-        print("I am currently held down!")
-    else
-        print("I have been released!")
-end)
------------------------------------------------------------------------------------------------
 ]]--
 
 
