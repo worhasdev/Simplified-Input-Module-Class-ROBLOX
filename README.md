@@ -36,7 +36,7 @@ print_input2.Event:Connect(function(isPressed)
 end)
 ```
 
-Looking at the program with a more technical view, we can see that the code handles player input using either a keyboard or gamepad. It defines three tables that map specific keys and gamepad buttons to different cutsomizable inputs. The script sets up event listeners to detect when these inputs begin (`InputBegan`) and end (`InputEnded`). Each input can be configured to either require the button to be held or simply pressed. The script maintains the state of each input in the `holdInputState` table and triggers corresponding events using `BindableEvent` instances stored in `buttonEvents`. The `input.Init()` function initializes these event listeners, while helper functions manage the input states and handle event firing. This allows the game's logic to respond to specific inputs dynamically.
+Looking at the program from a more in-depth standpoint, we can see that the code handles player input using either a keyboard or gamepad. It defines three tables that map specific keys and gamepad buttons to different cutsomizable inputs. The script sets up event listeners to detect when these inputs begin (`InputBegan`) and end (`InputEnded`). Each input can be configured to either require the button to be held or simply pressed. The script maintains the state of each input in the `holdInputState` table and triggers corresponding events using `BindableEvent` instances stored in `buttonEvents`. The `input.Init()` function initializes these event listeners, while helper functions manage the input states and handle event firing. This allows the game's logic to respond to specific inputs dynamically.
 
 ## Updates
 // 09/04/2024
