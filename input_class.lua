@@ -1,5 +1,18 @@
 --[[
+
 Author(s): Krish "worhas" Purgaus 
+Directory: N/A
+
+Licensing:
+GNU GENERAL PUBLIC LICENSE
+Version 3, 29 June 2007
+The rights to this software are held by Krish Purgaus,  and it is released under the GNU General Public License (GPL), Version 3. This program is free software: you can redistribute it and/or modify it under the terms of the GNU GPL as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+You should have received a copy of the GNU General Public License along with this program. If not, see <http://www.gnu.org/licenses/>.
+The rights and ownership of this software remain with Krish Purgaus. You are granted the freedom to use, modify, and share the software under the terms of the GPL. Any derivative works must also be licensed under the GPL, ensuring that future users maintain the same freedoms.
+- Krish Purgaus
+- March 30th, 2024
+
 ]]--
 
 local input = {}
@@ -12,10 +25,6 @@ local buttons = {
 	{ Name = "ability2", HoldInput = false },
 	{ Name = "ability3", HoldInput = false },
 	{ Name = "ability4", HoldInput = false },
-	{ Name = "special", HoldInput = false},
-	{ Name = "sprint", HoldInput = true},
-	{ Name = "block", HoldInput = false},
-	{ Name = "dash", HoldInput = false},
 }
 
 local keyboard_bind = {
@@ -23,10 +32,6 @@ local keyboard_bind = {
 	[Enum.KeyCode.Two] = "ability2",
 	[Enum.KeyCode.Three] = "ability3",
 	[Enum.KeyCode.Four] = "ability4",
-	[Enum.KeyCode.E] = "special",
-	[Enum.KeyCode.LeftShift] = "sprint",
-	[Enum.KeyCode.F] = "block",
-	[Enum.KeyCode.Q] = "dash",
 }
 
 local gamepad_bind = {
@@ -34,10 +39,6 @@ local gamepad_bind = {
 	[Enum.KeyCode.ButtonX] = "ability2",
 	[Enum.KeyCode.ButtonY] = "ability3",
 	[Enum.KeyCode.ButtonL1] = "ability4",
-	[Enum.KeyCode.ButtonR3] = "special",
-	[Enum.KeyCode.ButtonR1] = "sprint",
-	[Enum.KeyCode.ButtonB] = "block",
-	[Enum.KeyCode.ButtonL3] = "dash",
 }
 
 local buttonEvents = {}
