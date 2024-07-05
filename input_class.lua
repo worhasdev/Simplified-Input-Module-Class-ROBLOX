@@ -115,7 +115,6 @@ function input.Init()
 			end
 		end
 	end
-
 	uis.InputBegan:Connect(onKeyDown)
 	uis.InputEnded:Connect(onKeyUp)
 end
